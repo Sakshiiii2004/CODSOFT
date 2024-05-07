@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+char op='y';
+float num1,num2;
+do
+{
+cout<<"\n The Operators are : +,  -, *,  / "<<endl;
+cin>>op;
+cout<<"\n Enter two numbers you want to calculate "<<endl; 
+cin>>num1>>num2;
+cout<<"------------------------"<<endl;
+
+switch(op)
+{
+    case '+':
+    cout<<num1 << "+" << num2 << "=" <<num1 + num2<<endl;
+    break;
+    
+    case '-':
+    cout<<num1 << "-" << num2 << "=" <<num1 - num2<<endl;
+    break;
+    
+    case '*':
+    cout<<num1 << "*" << num2 << "=" <<num1 * num2<<endl;
+    break;
+    
+    case '/':
+        cout<<num1 << "/" << num2 << "=" <<num1 / num2<<endl;
+    break;
+    
+    default:
+    cout<<"\n Invalid Input... The operator you have entered is wrong.... ";
+} 
+    cout<<"Do you want to continue ?";
+    cin>>op;
+}
+   while (op=='y');
+
+return 0;
+}
